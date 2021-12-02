@@ -1,5 +1,5 @@
 #include<stdio.h>
-double factorial(int n);
+double factorial(int a);
 void main() {
 	int num1;
 	double fact;
@@ -10,10 +10,10 @@ void main() {
 	fact = factorial(num1);
 	printf("\n Factorial of %d is %lf \n", num1, fact);
 }
-double factorial(int n)
+double factorial(int a)
 {
-  if (n == 0)
+  if (a == 0)
     return 1;
   else
-    return(n * factorial(n-1));
+    return(a * factorial(a-1));
 }
